@@ -1,8 +1,10 @@
-#include <QCoreApplication>
+#include <iostream>
+#include <stack>
+#include "dfscodesolver.h"
+using namespace std;
 
-int main(int argc, char *argv[])
+int main()
 {
-    QCoreApplication a(argc, argv);
-
-    return a.exec();
+    dfscodesolver solver;
+    solver.solve();
 }

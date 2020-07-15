@@ -12,7 +12,9 @@ public:
     void initializtion();
     void printstate();
     bool isTarget();
-private:
+    bool operator==(codestate a1);
+    bool operator!=(codestate a2);
+    codestate operator=(codestate a3);
     char a[3][3];
     int location[2];
 };
